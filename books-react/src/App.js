@@ -1,9 +1,7 @@
 import './App.css';
-import * as $ from 'jquery';
 import { useEffect, useState } from 'react';
-import Form from './Form.js';
-import BooksList from './BooksList.js';
-
+import Form from './components/Form.js';
+import BooksList from './components/BooksList.js';
 
 function App() {
   const [book, setBook] = useState("");
@@ -11,11 +9,7 @@ function App() {
   const [items, setItems] = useState([]);
   const [finalBookUrl, setFinalBookUrl] = useState("");
   const [error, setError] = useState(null);
-  const [isLoaded, setIsLoaded] = useState(false);
   const [isEmpty, setIsEmpty] = useState();
-  const [errorArray, setErrorArray] = useState(true);
-
-
   useEffect(() => {
 
     fetch(finalBookUrl)
@@ -23,15 +17,12 @@ function App() {
     .then(
         (result) => {
             setItems(result.items);
-            setIsLoaded(true);
             setError(null);
         },
         (error) => {
             setError(error);
-            setIsLoaded(true);
         }
     );
-    
   }, [finalBookUrl]);
 
   

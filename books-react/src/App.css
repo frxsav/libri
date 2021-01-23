@@ -1,12 +1,33 @@
 html{
   min-height: 100%;
 }
+
 body{
   background-image: url("img/libri.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100vw 100vh;
   overflow-x: hidden;
+  height: 100%;
+}
+
+#form-container{
+  overflow-y: hidden;
+}
+
+#form{
+  margin-top: 15%;
+  transition: transform .5s;
+}
+
+#form div{
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.034);
+  transition: .5s all;
+}
+
+#form div:hover{
+  background-color: rgba(255, 255, 255, 0.055);
 }
 
 .book-div-style{
@@ -57,14 +78,20 @@ i{
   margin-right: 10%;
 }
 
+#all-page{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
 .card-style{
   background-color: rgb(248, 231, 255);
-  width: 150%;
-  min-height: 200%;
-  z-index: 3;
-  position: absolute;
-  left: 70%;
-  top: 30%;
+  width: 46%;
+  min-height: 35%;
+  position: fixed;
+  left: 27%;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 10px 5px 30px black;
@@ -78,7 +105,7 @@ i{
   min-height: 100%;
   position: fixed;
   z-index: 2;
-  opacity: 0.13;
+  opacity: 0.5;
   display: none;
   left: 0;
   top: 0;
@@ -93,7 +120,7 @@ i{
 }
 
 #input-book{
-  width: 33%;
+  width: 90%;
   border: none;
   outline: none;
   border-bottom: 1px solid black;
@@ -101,19 +128,25 @@ i{
   background-color: transparent;
   padding: .375rem .50rem;
   transition: width .5s;
+  text-transform: uppercase;
 }
 
 #input-book:hover{
-  width: 40%;
+  width: 98%;
+}
+
+#input-book::placeholder{
+  color: rgb(31, 31, 31);
+  text-transform: none;
 }
 
 .btn-style{
   padding: .4rem;
   background-color: transparent;
   border: none;
-  border-radius: 5px;
-  box-shadow: 0 0 3px black;
-  width: 7%;
+  border-radius: 3px;
+  box-shadow: 0 0 2px black;
+  width: 20%;
   transition: all .5s;
 }
 
@@ -121,11 +154,22 @@ i{
   background-color: rgba(0, 0, 0, 0.815);
   color: white;
   box-shadow: none;
-  width: 10%;
+  width: 16%;
 }
+
 .btn-style:active,
 .btn-style:focus{
   outline: none;
+}
+
+#positioning-x{
+  position: absolute;
+  right: -50px;
+  top: 10px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
 }
 
 
