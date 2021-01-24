@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/frxsav/libri/static/css/main.5905745b.chunk.css",
+    "main.js": "/frxsav/libri/static/js/main.a9e61247.chunk.js",
+    "main.js.map": "/frxsav/libri/static/js/main.a9e61247.chunk.js.map",
+    "runtime-main.js": "/frxsav/libri/static/js/runtime-main.2317f2e1.js",
+    "runtime-main.js.map": "/frxsav/libri/static/js/runtime-main.2317f2e1.js.map",
+    "static/js/2.0e9212e1.chunk.js": "/frxsav/libri/static/js/2.0e9212e1.chunk.js",
+    "static/js/2.0e9212e1.chunk.js.map": "/frxsav/libri/static/js/2.0e9212e1.chunk.js.map",
+    "static/js/3.b3b7a8dc.chunk.js": "/frxsav/libri/static/js/3.b3b7a8dc.chunk.js",
+    "static/js/3.b3b7a8dc.chunk.js.map": "/frxsav/libri/static/js/3.b3b7a8dc.chunk.js.map",
+    "index.html": "/frxsav/libri/index.html",
+    "static/css/main.5905745b.chunk.css.map": "/frxsav/libri/static/css/main.5905745b.chunk.css.map",
+    "static/js/2.0e9212e1.chunk.js.LICENSE.txt": "/frxsav/libri/static/js/2.0e9212e1.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/frxsav/libri/static/media/libri.51c3e945.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2317f2e1.js",
+    "static/js/2.0e9212e1.chunk.js",
+    "static/css/main.5905745b.chunk.css",
+    "static/js/main.a9e61247.chunk.js"
+  ]
+}
